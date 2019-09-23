@@ -8,7 +8,7 @@
 body {
     margin: 0px;
     background-color: #171717;
-    width: 100%;
+    width: 100vh;
     height: 100vh;
 }
 
@@ -37,7 +37,7 @@ body {
 
 .d4 {
     z-index: 3;
-    padding-top: 70px;
+    padding-top: 100px;
 }
 
 .d5 {
@@ -122,11 +122,11 @@ img {
 
 .d4up {
     z-index: 3;
-    -webkit-animation-name: moveUp1; 
+    -webkit-animation-name: moveUp; 
     -webkit-animation-duration: 3s; 
-    animation-name: moveUp1;
+    animation-name: moveUp;
     animation-duration: 3s;
-    padding-top: 40px;
+    padding-top: 0px;
 }
 
 .d5up {
@@ -203,11 +203,11 @@ img {
     }
   }
 .d4down {
-    padding-top: 70px;
+    padding-top: 100px;
     z-index: 3;
-    -webkit-animation-name: movedown1; 
+    -webkit-animation-name: movedown; 
     -webkit-animation-duration: 3s; 
-    animation-name: movedown1;
+    animation-name: movedown;
     animation-duration: 3s;
 }
 
