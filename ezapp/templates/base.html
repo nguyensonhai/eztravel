@@ -12,9 +12,17 @@
     <title>{% block title %}
     {% endblock  %} </title>
 </head>
-<body>
+<body onload="pageLoaded()">
+    <div id="animationload" class="animationload">
+            <div id="osahanloading" class="osahanloading"></div>
+    </div>
     {% block  content%}
 
     {% endblock  %}
+    <script>
+        function pageLoaded() {
+            document.getElementById("animationload").hidden = true;
+        }
+    </script>
 </body>
 </html>
