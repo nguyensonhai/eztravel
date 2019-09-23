@@ -1,30 +1,174 @@
-.banner {
-    background-image: url('../images/index/couple_travel_1.jpg');
-    background-size: cover;
-    background-position: center center;
-    width: 100%;
-    height: 800px;
-    color: #171717;
-    opacity: 0.8;
-}
-.banner-text {
-    width: 100%;
-    height: 800px;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.banner, .banner-text{
+body {
+    margin: 0px;
+    background-color: #171717;
+    width: 100%;
+    height: 100vh;
+}
+
+.banner{
+    width: auto;
+}
+
+.d1, .d2, .d3, .d4, .d5, .d6 {
+    position: absolute;
+    display: block;
+}
+
+.d1 {
+    z-index: 0;
+}
+
+.d2 {
+    z-index: 1;
+}
+
+.d3 {
+    z-index: 2;
+    padding-top: 100px;
+}
+
+.d4 {
+    z-index: 3;
+}
+
+.d5 {
+    z-index: 4;
+    background-color: #171717;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+}
+
+.d6 {
+    z-index: 5;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img {
+    max-width: 100%;
+}
+
+.d1up, .d2up, .d3up, .d4up, .d5up, .d6up {
     position: absolute;
 }
 
-.banner-text h1{
-    color: white;
-    padding-top: 70px;
-    margin-left: 50px;
-    width: 65%;
+.d1up {
+    z-index: 0;
 }
 
-.banner-text p{
-    color: white;
-    margin-left: 50px;
-    width: 50%;
+.d2up {
+    z-index: 1;
+}
+
+.d3up {
+    z-index: 2;
+    padding-bottom: 100px;
+    -webkit-animation-name: moveUp; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: moveUp;
+    animation-duration: 4s;
+}
+@-webkit-keyframes moveUp {
+    0%   {
+        padding-top: 70px;
+    }
+    100%  {
+        padding-top: 0px;
+    }
+  }
+  
+  /* Standard syntax */
+  @keyframes moveUp {
+    0%   {
+        padding-top: 70px;
+    }
+    100%  {
+        padding-top: 0px;
+    }
+  }
+
+.d4up {
+    z-index: 3;
+}
+
+.d5up {
+    z-index: 4;
+    background-color: #171717;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.3;
+}
+
+.d6up {
+    z-index: 5;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.d1down, .d2down, .d3down, .d4down, .d5down, .d6down {
+    position: absolute;
+}
+
+.d1down {
+    z-index: 0;
+}
+
+.d2down {
+    z-index: 1;
+}
+
+.d3down {
+    z-index: 2;
+    padding-bottom: 100px;
+    -webkit-animation-name: movedown; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: movedown;
+    animation-duration: 4s;
+}
+@-webkit-keyframes movedown {
+    0%   {
+        padding-top: 0px;
+    }
+    100%  {
+        padding-top: 70px;
+    }
+  }
+  
+  /* Standard syntax */
+  @keyframes movedown {
+    0%   {
+        padding-top: 0px;
+    }
+    100%  {
+        padding-top: 70px;
+    }
+  }
+
+.d4down {
+    z-index: 3;
+}
+
+.d5down {
+    z-index: 4;
+    background-color: #171717;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.3;
+}
+
+.d6down {
+    z-index: 5;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }

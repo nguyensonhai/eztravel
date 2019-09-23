@@ -7,9 +7,43 @@
 {% block title%}Ez Travel{% endblock  %}
 
 {% block content %}
-<div class="banner"></div>
-<div class=banner-text>
-        <h1>Travel Around the World</h1>
-        <p>come with us</p>
-</div>
+<div class="banner">
+        <div id="d1" class="d1">
+            <img src="{% static 'images/index/d1.png' %}" alt="d1">
+        </div>
+        <div id="d2" class="d2">
+            <img src="{% static 'images/index/d2.png' %}" alt="d2">
+        </div>
+        <div id="d3" class="d3">
+            <img src="{% static 'images/index/d3.png' %}" alt="d3">
+        </div>
+        <div id="d4" class="d4">
+            <img src="{% static 'images/index/d4.png' %}" alt="d3">
+        </div>
+        <div id="d5" class="d5">
+        </div>
+        <div id="d6" class="d6">
+        </div>
+    </div>
+    <script>
+        window.onscroll = function() {parallax()};
+        function parallax() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                document.getElementById('d1').className = "d1up";
+                document.getElementById('d2').className = "d2up";
+                document.getElementById('d3').className = "d3up";
+                document.getElementById('d4').className = "d4up";
+                document.getElementById('d5').className = "d5up";
+                document.getElementById('d6').className = "d6up";
+            }
+            else{
+                document.getElementById('d1').className = "d1down";
+                document.getElementById('d2').className = "d2down";
+                document.getElementById('d3').className = "d3down";
+                document.getElementById('d4').className = "d4down";
+                document.getElementById('d5').className = "d5down";
+                document.getElementById('d6').className = "d6down";
+            }
+        }
+    </script>
 {% endblock %}
