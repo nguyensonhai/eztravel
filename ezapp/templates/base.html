@@ -1,28 +1,40 @@
 {% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <meta charset="UTF-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    {% block stylesheet %}{% endblock %}
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="shortcut icon" href="{% static 'icon/logo.ico' %}">
-    <title>{% block title %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+{% block stylesheet %}{% endblock %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="shortcut icon" href="{% static 'icon/logo.ico' %}">
+<title>{% block title %}
     {% endblock  %} </title>
 </head>
+
 <body onload="pageLoaded()">
     <div id="animationload" class="animationload">
-            <div id="osahanloading" class="osahanloading"></div>
+        <div id="osahanloading" class="osahanloading"></div>
     </div>
     {% block  content%}
 
     {% endblock  %}
+    <script src="{% static 'js/smooth-scroll.js' %}"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 3000,
+            speedAsDuration: true
+        });
+    </script>
+
     <script>
         function pageLoaded() {
             document.getElementById("animationload").hidden = true;
         }
     </script>
 </body>
+
 </html>

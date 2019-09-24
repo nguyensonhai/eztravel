@@ -1,4 +1,3 @@
-
 *{
     margin: 0;
     padding: 0;
@@ -6,14 +5,196 @@
 }
 
 body {
-    margin: 0px;
     background-color: #171717;
     width: 100vh;
     height: 100vh;
+    overflow: hidden;
 }
 
 .banner{
-    width: auto;
+    width: 100vh;
+}
+.banner .d6 a{
+    font-size: 150px;
+    color: white;
+    text-decoration: none;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.banner .d6 .explore{
+    height: 100vh;
+    width: 100vh;
+    padding-top: 30%;
+    padding-left: 40%;
+    }
+.banner .d6 .back{
+    height: 100vh;
+    width: 100vh;
+    padding-top: 60%;
+    padding-left: 60%;
+    opacity: 0;
+    }
+
+.banner .d6up .explore{
+    height: 100vh;
+    width: 100vh;
+    padding-top: 0%;
+    padding-left: 40%;
+    -webkit-animation-name: moveUpExplorer; 
+    -webkit-animation-duration: 2s; 
+    animation-name: moveUpExplore;
+    animation-duration: 2s;
+    }
+    @-webkit-keyframes moveUpExplore {
+        0%   {
+            padding-top: 30%;
+            padding-left: 40%;
+            opacity: 1;
+        }
+        100%  {
+            padding-top: 0%;
+            padding-left: 40%;
+            opacity: 0;
+        }
+      }
+      
+      /* Standard syntax */
+      @keyframes moveUpExplore {
+        0%   {
+            padding-top: 30%;
+            padding-left: 40%;
+            opacity: 1;
+        }
+        100%  {
+            padding-top: 0%;
+            padding-left: 40%;
+            opacity: 0;
+        }
+      }
+
+.banner .d6up .back{
+    height: 100vh;
+    width: 100vh;
+    padding-top: 30%;
+    padding-left: 60%;
+    -webkit-animation-name: moveUpBack; 
+    -webkit-animation-duration: 2s; 
+    animation-name: moveUpBack;
+    animation-duration: 2s;
+    }
+    @-webkit-keyframes moveUpBack {
+        0%   {
+            padding-top: 60%;
+            padding-left: 60%;
+            opacity: 0;
+        }
+        100%  {
+            padding-top: 30%;
+            padding-left: 60%;
+            opacity: 1;
+        }
+      }
+      
+      /* Standard syntax */
+      @keyframes moveUpBack {
+        0%   {
+            padding-top: 60%;
+            padding-left: 60%;
+            opacity: 0;
+        }
+        100%  {
+            padding-top: 30%;
+            padding-left: 60%;
+            opacity: 1;
+        }
+      }
+
+.banner .d6down .explore{
+    height: 100vh;
+    width: 100vh;
+    padding-top: 30%;
+    padding-left: 40%;
+    -webkit-animation-name: moveDownExplorer; 
+    -webkit-animation-duration: 2s; 
+    animation-name: moveDownExplore;
+    animation-duration: 2s;
+    }
+    @-webkit-keyframes moveDownExplore {
+        0%   {
+            padding-top: 00%;
+            padding-left: 40%;
+            opacity: 0;
+        }
+        100%  {
+            padding-top: 30%;
+            padding-left: 40%;
+            opacity: 1;
+        }
+      }
+      
+      /* Standard syntax */
+      @keyframes moveDownExplore {
+        0%   {
+            padding-top: 0%;
+            padding-left: 40%;
+            opacity: 0;
+        }
+        100%  {
+            padding-top: 30%;
+            padding-left: 40%;
+            opacity: 1;
+        }
+      }
+
+.banner .d6down .back{
+    height: 100vh;
+    width: 100vh;
+    padding-top: 60%;
+    padding-left: 60%;
+    -webkit-animation-name: moveDownBack; 
+    -webkit-animation-duration: 2s; 
+    animation-name: moveDownBack;
+    animation-duration: 2s;
+    }
+    @-webkit-keyframes moveDownBack {
+        0%   {
+            padding-top: 30%;
+            padding-left: 60%;
+            opacity: 1;
+        }
+        100%  {
+            padding-top: 60%;
+            padding-left: 60%;
+            opacity: 0;
+        }
+      }
+      
+      /* Standard syntax */
+      @keyframes moveDownBack {
+        0%   {
+            padding-top: 30%;
+            padding-left: 60%;
+            opacity: 1;
+        }
+        100%  {
+            padding-top: 60%;
+            padding-left: 60%;
+            opacity: 0;
+        }
+      }
+
+
+.banner .d6up a{
+    font-size: 150px;
+    color: white;
+    text-decoration: none;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+}
+.banner .d6down a{
+    font-size: 150px;
+    color: white;
+    text-decoration: none;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
 }
 
 .d1, .d2, .d3, .d4, .d5, .d6 {
@@ -47,9 +228,9 @@ body {
 
 .d6 {
     z-index: 5;
-    left: 50%;
+/*     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
 }
 
 img {
@@ -68,18 +249,18 @@ img {
     z-index: 1;
     padding-top: 40px;
     -webkit-animation-name: moveUp1; 
-    -webkit-animation-duration: 3s; 
+    -webkit-animation-duration: 2s; 
     animation-name: moveUp1;
-    animation-duration: 3s;
+    animation-duration: 2s;
 }
 
 .d3up {
     z-index: 2;
     padding-top: 0px;
     -webkit-animation-name: moveUp; 
-    -webkit-animation-duration: 3s; 
+    -webkit-animation-duration: 2s; 
     animation-name: moveUp;
-    animation-duration: 3s;
+    animation-duration: 2s;
 }
 @-webkit-keyframes moveUp {
     0%   {
@@ -123,9 +304,9 @@ img {
 .d4up {
     z-index: 3;
     -webkit-animation-name: moveUp; 
-    -webkit-animation-duration: 3s; 
+    -webkit-animation-duration: 2s; 
     animation-name: moveUp;
-    animation-duration: 3s;
+    animation-duration: 2s;
     padding-top: 0px;
 }
 
@@ -136,9 +317,9 @@ img {
 
 .d6up {
     z-index: 5;
-    left: 50%;
+   /*  left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
 }
 
 .d1down, .d2down, .d3down, .d4down, .d5down, .d6down {
@@ -153,18 +334,18 @@ img {
     padding-top: 70px;
     z-index: 1;
     -webkit-animation-name: movedown1; 
-    -webkit-animation-duration: 3s; 
+    -webkit-animation-duration: 2s; 
     animation-name: movedown1;
-    animation-duration: 3s;
+    animation-duration: 2s;
 }
 
 .d3down {
     padding-top: 100px;
     z-index: 2;
     -webkit-animation-name: movedown; 
-    -webkit-animation-duration: 3s; 
+    -webkit-animation-duration: 2s; 
     animation-name: movedown;
-    animation-duration: 3s;
+    animation-duration: 2s;
 }
 @-webkit-keyframes movedown {
     0%   {
@@ -206,9 +387,9 @@ img {
     padding-top: 100px;
     z-index: 3;
     -webkit-animation-name: movedown; 
-    -webkit-animation-duration: 3s; 
+    -webkit-animation-duration: 2s; 
     animation-name: movedown;
-    animation-duration: 3s;
+    animation-duration: 2s;
 }
 
 .d5down {
@@ -218,7 +399,7 @@ img {
 
 .d6down {
     z-index: 5;
-    left: 50%;
+    /* left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
 }
