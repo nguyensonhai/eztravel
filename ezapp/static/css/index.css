@@ -15,10 +15,79 @@ body {
     width: 100vh;
 }
 .banner .d6 a{
-    font-size: 150px;
+    font-size: 160px;
     color: white;
     text-decoration: none;
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.galery{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-left: 45%;
+    
+}
+
+.galery .single{
+    background-image: url(../images/index/single.png);
+    background-size: cover;
+    background-position: center center;
+    width: 45%;
+    height: 170px;
+    margin-bottom: 25px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+  }
+  
+  .galery .couple{
+    background-image: url(../images/index/couple.png);
+    background-size: cover;
+    background-position: center center;
+    width: 45%;
+    height: 170px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+  }
+  
+  .galery .family{
+    background-image: url(../images/index/family.png);
+    background-size: cover;
+    background-position: center center;
+    width: 45%;
+    height: 170px;
+    margin-bottom: 25px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+  }
+  
+  .galery .team{
+    background-image: url(../images/index/team.png);
+    background-size: cover;
+    background-position: center bottom;
+    width: 45%;
+    height: 170px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+  }
+
+ .back-a{
+    width: 100%;
+    margin-left: 85%;
+ } 
+
+.back-a img{
+    width: 100px;
+    height: 100px;
 }
 
 .banner .d6 .explore{
@@ -31,7 +100,6 @@ body {
     height: 100vh;
     width: 100vh;
     padding-top: 60%;
-    padding-left: 60%;
     opacity: 0;
     }
 
@@ -75,8 +143,7 @@ body {
 .banner .d6up .back{
     height: 100vh;
     width: 100vh;
-    padding-top: 30%;
-    padding-left: 60%;
+    padding-top: 20%;
     -webkit-animation-name: moveUpBack; 
     -webkit-animation-duration: 2s; 
     animation-name: moveUpBack;
@@ -85,12 +152,10 @@ body {
     @-webkit-keyframes moveUpBack {
         0%   {
             padding-top: 60%;
-            padding-left: 60%;
             opacity: 0;
         }
         100%  {
-            padding-top: 30%;
-            padding-left: 60%;
+            padding-top: 20%;
             opacity: 1;
         }
       }
@@ -99,12 +164,10 @@ body {
       @keyframes moveUpBack {
         0%   {
             padding-top: 60%;
-            padding-left: 60%;
             opacity: 0;
         }
         100%  {
-            padding-top: 30%;
-            padding-left: 60%;
+            padding-top: 20%;
             opacity: 1;
         }
       }
@@ -122,12 +185,10 @@ body {
     @-webkit-keyframes moveDownExplore {
         0%   {
             padding-top: 00%;
-            padding-left: 40%;
             opacity: 0;
         }
         100%  {
             padding-top: 30%;
-            padding-left: 40%;
             opacity: 1;
         }
       }
@@ -136,12 +197,10 @@ body {
       @keyframes moveDownExplore {
         0%   {
             padding-top: 0%;
-            padding-left: 40%;
             opacity: 0;
         }
         100%  {
             padding-top: 30%;
-            padding-left: 40%;
             opacity: 1;
         }
       }
@@ -150,7 +209,6 @@ body {
     height: 100vh;
     width: 100vh;
     padding-top: 60%;
-    padding-left: 60%;
     -webkit-animation-name: moveDownBack; 
     -webkit-animation-duration: 2s; 
     animation-name: moveDownBack;
@@ -158,13 +216,11 @@ body {
     }
     @-webkit-keyframes moveDownBack {
         0%   {
-            padding-top: 30%;
-            padding-left: 60%;
+            padding-top: 20%;
             opacity: 1;
         }
         100%  {
             padding-top: 60%;
-            padding-left: 60%;
             opacity: 0;
         }
       }
@@ -172,26 +228,24 @@ body {
       /* Standard syntax */
       @keyframes moveDownBack {
         0%   {
-            padding-top: 30%;
-            padding-left: 60%;
+            padding-top: 20%;
             opacity: 1;
         }
         100%  {
             padding-top: 60%;
-            padding-left: 60%;
             opacity: 0;
         }
       }
 
 
 .banner .d6up a{
-    font-size: 150px;
+    font-size: 160px;
     color: white;
     text-decoration: none;
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
 }
 .banner .d6down a{
-    font-size: 150px;
+    font-size: 160px;
     color: white;
     text-decoration: none;
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
