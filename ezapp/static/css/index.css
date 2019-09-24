@@ -14,12 +14,20 @@ body {
 .banner{
     width: 100vh;
 }
-a{
+
+.explore a{
     font-size: 160px;
     color: white;
     text-decoration: none;
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     border-bottom: 15px solid white;
+}
+
+a{
+    font-size: 160px;
+    color: white;
+    text-decoration: none;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 
