@@ -6,6 +6,7 @@ body, html {
 
 body a, html a {
   text-decoration: none;
+  overflow: hidden;
 }
 
 header {
@@ -14,7 +15,12 @@ header {
 
 header .logo {
   color: #171717;
-  font-weight: bold;
+}
+
+header a{
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: normal;
+  font-size: 25px;
 }
 
 header .menu-btn {
@@ -43,11 +49,12 @@ nav {
   position: absolute;
   background: #171717;
   padding: 2em;
-  width: calc(100%);
+  width: calc(30%);
   height: calc(100vh);
   display: none;
   transform: scaleX(0);
   transform-origin: right;
+  margin-left: 70%;
 }
 
 nav .close-btn {
@@ -59,9 +66,9 @@ nav .close-btn {
 
 nav ul {
   list-style-type: none;
-  margin: 10em;
+  margin: 5em;
   display: grid;
-  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(4, 25%);
   width: 80%;
 }
 
@@ -80,6 +87,7 @@ nav ul span {
 
 nav ul li {
   opacity: 0;
+  padding-top: 35px;
 }
 
 .show-menu {
