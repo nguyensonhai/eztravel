@@ -12,45 +12,45 @@
 <nav id="sign-up">
     <img src="{% static 'images/main/close.svg' %}" class="close-btn" id="close-menu-su">
     <div class="lg-lb">
-        <img src="{% static 'images/base/logo_eztravel.png' %}">
-        <p>sign up</p>
+        <img src="{% static 'images/base/logo_eztravel.png' %}" id="img-su">
+        <p>Sign up</p>
     </div>
-    <p>your name</p>
-    <input id="name" type="text">
-    <p>email</p>
-    <input id="email" type="text">
+    <p>Your name</p>
+    <input id="name" type="text" placeholder="Type your name">
+    <p>Email</p>
+    <input type="email" id="email" type="text" placeholder="Type your email">
     <!-- <p>user</p>
     <input id="user" type="text"> -->
-    <p>password</p>
-    <input id="password" type="text">
-    <p>re-enter password</p>
-    <input id="re-password" type="text">
-    <a href="#login">already has an account</a>
+    <p>Password</p>
+    <input type="password" id="password" type="text" placeholder="Type your password">
+    <p>Re-type password</p>
+    <input type="password" id="re-password" type="text" placeholder="Re-type your password">
+    <a href="#login">Already has an account?</a>
     <input id='comfirm' type="submit" value="Confirm">
 </nav>
 <nav id="overlay">
     <img src="{% static 'images/main/close.svg' %}" class="close-btn" id="close-menu">
     <ul>
         <li>
-            <a href="/">home</a>
+            <a href="/">Home</a>
         </li>
         <li>
-            <button id="log-in-btn">log in</button>
+            <button id="log-in-btn">Log in</button>
         </li>
         <li>
-            <button id="sign-up-btn">sign up</button>
+            <button id="sign-up-btn">Sign up</button>
         </li>
         <li>
-            <button id="about-us-btn">about us</button>
+            <button id="about-us-btn">About us</button>
         </li>
     </ul>
 </nav>
 <header>
-    <a href="#" class="logo">eztravel</a>
+    <a href="#" class="logo">Ez Travel</a>
     <img src="{% static 'images/main/menu.svg' %}" class="menu-btn" id="open-menu">
 </header>
 <section>
-    <h1>welcome to eztravel</h1>
+    <h1>Welcome to Ez Travel</h1>
 </section>
 <script>
     const overlay = document.getElementById('overlay');

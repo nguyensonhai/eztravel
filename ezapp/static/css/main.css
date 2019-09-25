@@ -104,17 +104,20 @@ nav ul {
   text-decoration: none;
 }
 
-#sign-up input[type=text] {
+#sign-up input[type=text], input[type=email], input[type=password] {
   color: #171717;
   font-weight: bold;
   font-size: 15px;
   padding-left: 5px;
+  border-radius: 4px;
 }
 #sign-up input[type=submit] {
   color: #171717;
   font-weight: bold;
   font-size: 15px;
   background: white;
+  border-radius: 4px;
+  border: 1px solid white;
 }
 
 #confirm{
@@ -206,4 +209,3 @@ nav ul li {
   82.78% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
   100% { opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
 }
-
