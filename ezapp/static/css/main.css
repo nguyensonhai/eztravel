@@ -94,6 +94,7 @@ nav ul {
   z-index: 2;
   display: grid;
   grid-template-rows: no-repeat;
+  opacity: 0;
 }
 
 #sign-up p, a {
@@ -176,6 +177,7 @@ nav ul li {
   }
   to{
     transform: scaleX(1);
+    opacity: 1;
   }
 }
 
