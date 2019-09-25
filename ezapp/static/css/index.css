@@ -12,7 +12,8 @@ body {
 }
 .to-main p{
     font-size: 25px;
-    padding: 22%;
+    padding-top: 25%;
+    padding-left: 27%
 }
 .to-main{
     width: 100%;
@@ -31,7 +32,7 @@ body {
 }
 
 .explore a{
-    font-size: 160px;
+    font-size: 115px;
     color: white;
     text-decoration: none;
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -39,7 +40,7 @@ body {
 }
 
 a{
-    font-size: 160px;
+    font-size: 115px;
     color: white;
     text-decoration: none;
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -49,7 +50,7 @@ a{
 #explore :hover {
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
     position: relative;
-    font-size: 160px;
+    font-size: 115px;
     text-decoration: none;
     color: white;
     display: inline-block;
@@ -197,7 +198,7 @@ a{
     height: 100vh;
     width: 100vh;
     padding-top: 30%;
-    padding-left: 40%;
+    padding-left: 55%;
     }
 .banner .d6 .back{
     height: 100vh;
@@ -210,7 +211,7 @@ a{
     height: 100vh;
     width: 100vh;
     padding-top: 0%;
-    padding-left: 40%;
+    padding-left: 55%;
     -webkit-animation-name: moveUpExplorer; 
     -webkit-animation-duration: 2s; 
     animation-name: moveUpExplore;
@@ -219,12 +220,12 @@ a{
     @-webkit-keyframes moveUpExplore {
         0%   {
             padding-top: 30%;
-            padding-left: 40%;
+            padding-left: 55%;
             opacity: 1;
         }
         100%  {
             padding-top: 0%;
-            padding-left: 40%;
+            padding-left: 55%;
             opacity: 0;
         }
       }
@@ -233,12 +234,12 @@ a{
       @keyframes moveUpExplore {
         0%   {
             padding-top: 30%;
-            padding-left: 40%;
+            padding-left: 55%;
             opacity: 1;
         }
         100%  {
             padding-top: 0%;
-            padding-left: 40%;
+            padding-left: 55%;
             opacity: 0;
         }
       }
@@ -279,7 +280,7 @@ a{
     height: 100vh;
     width: 100vh;
     padding-top: 30%;
-    padding-left: 40%;
+    padding-left: 55%;
     -webkit-animation-name: moveDownExplorer; 
     -webkit-animation-duration: 2s; 
     animation-name: moveDownExplore;
@@ -342,13 +343,13 @@ a{
 
 
 .banner .d6up a{
-    font-size: 160px;
+    font-size: 115px;
     color: white;
     text-decoration: none;
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
 }
 .banner .d6down a{
-    font-size: 160px;
+    font-size: 115px;
     color: white;
     text-decoration: none;
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
