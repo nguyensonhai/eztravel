@@ -9,15 +9,43 @@
 {% block title%}Ez Travel{% endblock  %}
 
 {% block content %}
-<nav id="ovelay">
-    
+<nav id="overlay">
+    <img src="{% static 'images/main/close.svg' %}" class="close-btn" id="close-menu">
+    <ul>
+        <li>
+            <a href="#">home</a>
+            <span>welcome to my home</span>
+        </li>
+        <li>
+            <a href="#">about us</a>
+            <span>somethings about us</span>
+        </li>
+        <li>
+            <a href="#">services</a>
+            <span>some services</span>
+        </li>
+        <li>
+            <a href="#">contact</a>
+            <span>contact us to more information</span>
+        </li>
+    </ul>
 </nav>
 <header>
     <a href="#" class="logo">eztravel</a>
-
     <img src="{% static 'images/main/menu.svg' %}" class="menu-btn" id="open-menu">
 </header>
 <section>
     <h1>welcome to eztravel</h1>
 </section>
+<script>
+    const overlay = document.getElementById('overlay');
+    const closeMenu = document.getElementById('close-menu');
+    document.getElementById('open-menu').addEventListener('click', function(){
+        overlay.classList.add('show-menu');
+    });
+    
+    document.getElementById('close-menu').addEventListener('click', function(){
+        overlay.classList.remove('show-menu');
+    });
+</script>
 {% endblock  %}
