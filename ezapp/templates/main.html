@@ -9,6 +9,25 @@
 {% block title%}Ez Travel{% endblock  %}
 
 {% block content %}
+<nav id="sign-up">
+    <img src="{% static 'images/main/close.svg' %}" class="close-btn" id="close-menu-su">
+    <div class="lg-lb">
+        <img src="{% static 'images/base/logo_eztravel.png' %}">
+        <p>sign up</p>
+    </div>
+    <p>your name</p>
+    <input id="name" type="text">
+    <p>email</p>
+    <input id="email" type="text">
+    <!-- <p>user</p>
+    <input id="user" type="text"> -->
+    <p>password</p>
+    <input id="password" type="text">
+    <p>re-enter password</p>
+    <input id="re-password" type="text">
+    <a href="#login">already has an account</a>
+    <input id='comfirm' type="submit" value="Confirm">
+</nav>
 <nav id="overlay">
     <img src="{% static 'images/main/close.svg' %}" class="close-btn" id="close-menu">
     <ul>
@@ -16,13 +35,13 @@
             <a href="/">home</a>
         </li>
         <li>
-            <a href="#log-in"">log in</a>
+            <button id="log-in-btn">log in</button>
         </li>
         <li>
-            <a href="#sign-up">sign up</a>
+            <button id="sign-up-btn">sign up</button>
         </li>
         <li>
-            <a href="#about-us">about us</a>
+            <button id="about-us-btn">about us</button>
         </li>
     </ul>
 </nav>
@@ -36,12 +55,20 @@
 <script>
     const overlay = document.getElementById('overlay');
     const closeMenu = document.getElementById('close-menu');
-    document.getElementById('open-menu').addEventListener('click', function(){
+    const singUp = document.getElementById('sign-up');
+    document.getElementById('open-menu').addEventListener('click', function () {
         overlay.classList.add('show-menu');
     });
-    
-    document.getElementById('close-menu').addEventListener('click', function(){
+    document.getElementById('close-menu-su').addEventListener('click', function () {
+        singUp.classList.remove('show-menu');
+    });
+    document.getElementById('close-menu').addEventListener('click', function () {
         overlay.classList.remove('show-menu');
     });
+    document.getElementById('sign-up-btn').addEventListener('click', function () {
+        singUp.classList.add('show-menu');
+        overlay.classList.remove('show-menu');
+    });
+
 </script>
 {% endblock  %}
