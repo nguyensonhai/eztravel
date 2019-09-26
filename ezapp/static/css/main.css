@@ -1,6 +1,9 @@
 body, html {
-  background-color: white;
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  background-image: url("../images/main/background.jpg");
+  background-size: cover;
+  background-position: center center center center;
+  background-repeat: no-repeat;
 }
 
 body a, html a {
@@ -13,7 +16,7 @@ header {
 }
 
 header .logo {
-  color: #171717;
+  color: white;
 }
 
 header a{
@@ -36,11 +39,12 @@ section h1 {
   font-size: 4em;
   margin: 1em auto;
   width: 70%;
+  color: white;
 }
 
 section h1::before {
   content: ' ';
-  border-top: 5px solid #171717;
+  border-top: 5px solid white;
   display: block;
 }
 
