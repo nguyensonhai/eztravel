@@ -4,21 +4,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-</head>
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-{% block stylesheet %}{% endblock %}
-<link rel="stylesheet" href="{% static 'css/style.css' %}">
-<link rel="stylesheet" href="{% static 'css/loader.css' %}">
-<link rel="shortcut icon" href="{% static 'icon/logo_eztravel.ico' %}">
-<title>{% block title %}
-    {% endblock  %} </title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% block stylesheet %}{% endblock %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/loader.css' %}">
+    <link rel="shortcut icon" href="{% static 'icon/logo_eztravel.ico' %}">
+    <title>{% block title %}
+        {% endblock  %} </title>
 </head>
 
 <body onload="pageLoaded()">
     <div id="animationload" class="animationload">
-        <div id="loader_wrap" class="loader__wrap" role="alertdialog" aria-busy="true" aria-live="polite" aria-label="Loading…">
+        <div id="loader_wrap" class="loader__wrap" role="alertdialog" aria-busy="true" aria-live="polite"
+            aria-label="Loading…">
             <div class="loader" aria-hidden="true">
                 <div class="loader__sq"></div>
                 <div class="loader__sq"></div>
@@ -35,16 +34,15 @@
             speedAsDuration: true
         });
     </script>
-
     <script>
         function pageLoaded() {
             document.getElementById("animationload").hidden = true;
         }
     </script>
     <script type="text/javascript">
-        document.oncontextmenu =new Function("return false;")
-        document.onselectstart =new Function("return false;")
-        </script>
+        document.oncontextmenu = new Function("return false;")
+        document.onselectstart = new Function("return false;")
+    </script>
 </body>
 
 </html>
