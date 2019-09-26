@@ -1,6 +1,5 @@
 body, html {
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-  background-image: url("../images/main/1.jpg");
   background-size: cover;
   background-position: center center center center;
   background-repeat: no-repeat;
@@ -21,8 +20,8 @@ header .logo {
 
 header a{
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-  font-weight: bold;
-  font-size: 25px;
+  font-weight: normal;
+  font-size: 20px;
 }
 
 header .menu-btn {

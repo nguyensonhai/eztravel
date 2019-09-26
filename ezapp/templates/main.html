@@ -46,11 +46,11 @@
     </ul>
 </nav>
 <header>
-    <button href="#" class="logo">Ez Travel</button>
+    <a href="#" class="logo">Ez Travel</a>
     <img src="{% static 'images/main/menu.svg' %}" class="menu-btn" id="open-menu">
 </header>
 <section>
-    <h1 id="wc">Welcome to Ez Travel</h1>
+    <h1>Welcome to Ez Travel</h1>
 </section>
 <script>
     const overlay = document.getElementById('overlay');
@@ -69,10 +69,7 @@
     document.getElementById('sign-up-btn').addEventListener('click', function () {
         singUp.classList.add('show-menu');
     });
-    document.getElementById('wc').addEventListener('click', function(){
-        if(bg == 1) {
-            document.body.style.background = "url('{% static 'images/main/2.jpg' %}') cover no-repeat center center center center";
-        }
-    });
+    var images = ["{% static 'images/main/1.jpg' %}", "{% static 'images/main/2.jpg' %}", "{% static 'images/main/3.jpg' %}"];
+  document.body.style.backgroundImage = 'url(' + images[Math.floor(Math.random() * images.length)] + ')';
 </script>
 {% endblock  %}
