@@ -72,6 +72,7 @@
     var images = ["{% static 'images/main/1.jpg' %}", "{% static 'images/main/2.jpg' %}", "{% static 'images/main/3.jpg' %}", "{% static 'images/main/4.jpg' %}"];
     var random = images[Math.floor(Math.random() * images.length)];
   document.body.style.backgroundImage = 'url(' + random + ')';
+  document.getElementsById(".loader_wrap").style.backgroundColor = '#FEE2D4';
   if(random == "{% static 'images/main/1.jpg' %}") {
       document.getElementsById(".loader_wrap").style.backgroundColor = '#FEE2D4';
   }
