@@ -24,7 +24,7 @@ body {
 }
 
 .to-main:hover{
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 .banner{
@@ -36,7 +36,7 @@ body {
     color: white;
     text-decoration: none;
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-    border-bottom: 15px solid white;
+    border-bottom: 10px solid white;
 }
 
 a{
@@ -54,7 +54,7 @@ a{
     text-decoration: none;
     color: white;
     display: inline-block;
-    border-bottom: 15px solid white;
+    border-bottom: 10px solid white;
 /*     background-size: 120% 100%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -120,16 +120,16 @@ a{
 }
 
 .galery .single:hover{
-    transform: scale(2);
+    transform: scale(1.3);
 }
 .galery .couple:hover{
-    transform: scale(2);
+    transform: scale(1.3);
 }
 .galery .family:hover{
-    transform: scale(2);
+    transform: scale(1.3);
 }
 .galery .team:hover{
-    transform: scale(2);
+    transform: scale(1.3);
 }
 
 .galery .single{
@@ -186,12 +186,12 @@ a{
 
  .back-a{
     width: 100%;
-    margin-left: 85%;
+    margin-left: 86.5%;
  } 
 
 .back-a img{
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
 }
 
 .banner .d6 .explore{
