@@ -15,10 +15,13 @@
 </head>
 
 <body>
-    <div class="loader_wrap" role="alertdialog" aria-busy="true" aria-live="polite" aria-label="Loading…">
-        <div class="loader" aria-hidden="true">
-            <div class="loader__sq"></div>
-            <div class="loader__sq"></div>
+    <div id="animationload" class="animationload">
+        <div id="loader_wrap" class="loader__wrap" role="alertdialog" aria-busy="true" aria-live="polite"
+            aria-label="Loading…">
+            <div class="loader" aria-hidden="true">
+                <div class="loader__sq"></div>
+                <div class="loader__sq"></div>
+            </div>
         </div>
     </div>
     <script src="{% static 'js/smooth-scroll.js' %}"></script>
@@ -29,9 +32,8 @@
         });
     </script>
     <script type="text/javascript">
-        document.oncontextmenu =new Function("return false;")
-        document.onselectstart =new Function("return false;")
-        document.getElementsById("loader_wrap").style.background = '#FEE2D4';
+        document.oncontextmenu = new Function("return false;")
+        document.onselectstart = new Function("return false;")
     </script>
 </body>
 

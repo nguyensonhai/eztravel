@@ -56,7 +56,6 @@
     const overlay = document.getElementById('overlay');
     const closeMenu = document.getElementById('close-menu');
     const singUp = document.getElementById('sign-up');
-    const bg = 1;
     document.getElementById('open-menu').addEventListener('click', function () {
         overlay.classList.add('show-menu');
     });
@@ -71,18 +70,18 @@
     });
     var images = ["{% static 'images/main/1.jpg' %}", "{% static 'images/main/2.jpg' %}", "{% static 'images/main/3.jpg' %}", "{% static 'images/main/4.jpg' %}"];
     var random = images[Math.floor(Math.random() * images.length)];
-  document.body.style.backgroundImage = 'url(' + random + ')';
-  if(random == "{% static 'images/main/1.jpg' %}") {
-      document.getElementsById("loader_wrap").style.background = '#FEE2D4';
-  }
-  else if(random == "{% static 'images/main/2.jpg' %}") {
-      document.getElementsById("loader_wrap").style.background = '#C8E690';
-  }
-  else if(random == "{% static 'images/main/3.jpg' %}") {
-      document.getElementsById("loader_wrap").style.background = '#FDDAC6';
-  }
-  else if(random == "{% static 'images/main/4.jpg' %}") {
-      document.getElementsById("loader_wrap").style.background = '#E5F4F9';
-  }
+    document.body.style.backgroundImage = 'url(' + random + ')';
+    if (random == "{% static 'images/main/1.jpg' %}") {
+        document.getElementsById("loader_wrap").style.backgroundColor = '#FEE2D4';
+    }
+    else if (random == "{% static 'images/main/2.jpg' %}") {
+        document.getElementsById("loader_wrap").style.backgroundColor = '#C8E690';
+    }
+    else if (random == "{% static 'images/main/3.jpg' %}") {
+        document.getElementsById("loader_wrap").style.backgroundColor = '#FDDAC6';
+    }
+    else if (random == "{% static 'images/main/4.jpg' %}") {
+        document.getElementsById("loader_wrap").style.backgroundColor = '#E5F4F9';
+    }
 </script>
 {% endblock  %}

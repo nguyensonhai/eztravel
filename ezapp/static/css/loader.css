@@ -6,7 +6,7 @@
     width: 100%;
     height: 100%;
     display: flex;
-    background-color: #171717;
+    background-color: white;
     z-index: 10000;
   }
   
@@ -42,12 +42,12 @@
   }
   .loader__sq:first-of-type::before {
     --i: 1;
-    border: 3px solid white;
+    border: 3px solid #171717;
     border-radius: 50%;
   }
   .loader__sq:first-of-type::after {
     --i: 3;
-    background-color: white;
+    background-color: #171717;
   }
   @supports (clip-path: circle()) {
     .loader__sq:first-of-type::after {
@@ -56,11 +56,11 @@
   }
   .loader__sq:nth-of-type(2)::before {
     --i: 2;
-    border: 3px solid white;
+    border: 3px solid #171717;
   }
   .loader__sq:nth-of-type(2)::after {
     --i: 4;
-    background-color:white;
+    background-color:#171717;
     border-radius: 50%;
   }
   @supports (clip-path: circle()) {
