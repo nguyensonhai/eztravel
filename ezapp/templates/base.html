@@ -9,7 +9,6 @@
 </head>
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 {% block stylesheet %}{% endblock %}
-<link rel="stylesheet" href="{% static 'css/loader.css' %}">
 <link rel="stylesheet" href="{% static 'css/style.css' %}">
 <link rel="shortcut icon" href="{% static 'icon/logo_eztravel.ico' %}">
 <title>{% block title %}
@@ -17,10 +16,12 @@
 </head>
 
 <body onload="pageLoaded()">
-    <div class="loader__wrap" role="alertdialog" aria-busy="true" aria-live="polite" aria-label="Loading…">
-        <div class="loader" aria-hidden="true">
-            <div class="loader__sq"></div>
-            <div class="loader__sq"></div>
+    <div id="animationload" class="animationload">
+        <div id="loader__wrap" class="loader__wrap" role="alertdialog" aria-busy="true" aria-live="polite" aria-label="Loading…">
+            <div class="loader" aria-hidden="true">
+                <div class="loader__sq"></div>
+                <div class="loader__sq"></div>
+            </div>
         </div>
     </div>
     {% block  content%}
@@ -36,7 +37,7 @@
 
     <script>
         function pageLoaded() {
-            document.getElementById("loader__wrap").hidden = true;
+            document.getElementById("animationload").hidden = true;
         }
     </script>
     <script type="text/javascript">
