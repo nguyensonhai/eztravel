@@ -50,12 +50,13 @@
     <img src="{% static 'images/main/menu.svg' %}" class="menu-btn" id="open-menu">
 </header>
 <section>
-    <h1>Welcome to Ez Travel</h1>
+    <h1 id="wc">Welcome to Ez Travel</h1>
 </section>
 <script>
     const overlay = document.getElementById('overlay');
     const closeMenu = document.getElementById('close-menu');
     const singUp = document.getElementById('sign-up');
+    const bg = 1;
     document.getElementById('open-menu').addEventListener('click', function () {
         overlay.classList.add('show-menu');
     });
@@ -68,6 +69,10 @@
     document.getElementById('sign-up-btn').addEventListener('click', function () {
         singUp.classList.add('show-menu');
     });
-
+    document.getElementById('wc').addEventListener('click', function(){
+        if(bg == 1) {
+            document.body.style.background = "url('{% static 'images/main/2.jpg' %}') cover no-repeat center center center center";
+        }
+    });
 </script>
 {% endblock  %}
