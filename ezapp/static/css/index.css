@@ -12,8 +12,8 @@ body {
 }
 .to-main p{
     font-size: 25px;
-    padding-top: 25%;
-    padding-left: 27%
+    padding-top: 27%;
+    padding-left: 33%
 }
 .to-main{
     width: 100%;
@@ -24,7 +24,7 @@ body {
 }
 
 .to-main:hover{
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 .banner{
@@ -111,7 +111,7 @@ a{
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    margin-left: 45%;
+    margin-left: 55%;
     
 }
 .galery img{
@@ -137,7 +137,7 @@ a{
     background-size: cover;
     background-position: center center;
     width: 45%;
-    height: 190px;
+    height: 270px;
     margin-bottom: 25px;
     border-style: solid;
     border-width: 5px;
@@ -150,7 +150,7 @@ a{
     background-size: cover;
     background-position: center center;
     width: 45%;
-    height: 190px;
+    height: 270px;
     margin-bottom: 25px;
     margin-left: 25px;
     border-style: solid;
@@ -164,7 +164,7 @@ a{
     background-size: cover;
     background-position: center center;
     width: 45%;
-    height: 190px;
+    height: 270px;
     border-style: solid;
     border-width: 5px;
     border-color: white;
@@ -176,7 +176,7 @@ a{
     background-size: cover;
     background-position: center bottom;
     width: 45%;
-    height: 190px;
+    height: 270px;
     margin-left: 25px;
     border-style: solid;
     border-width: 5px;
@@ -186,7 +186,7 @@ a{
 
  .back-a{
     width: 100%;
-    margin-left: 86.5%;
+    margin-left: 97.5%;
  } 
 
 .back-a img{
@@ -198,7 +198,7 @@ a{
     height: 100vh;
     width: 100vh;
     padding-top: 30%;
-    padding-left: 55%;
+    padding-left: 73%;
     }
 .banner .d6 .back{
     height: 100vh;
@@ -211,7 +211,7 @@ a{
     height: 100vh;
     width: 100vh;
     padding-top: 0%;
-    padding-left: 55%;
+    padding-left: 73%;
     -webkit-animation-name: moveUpExplorer; 
     -webkit-animation-duration: 2s; 
     animation-name: moveUpExplore;
@@ -220,12 +220,12 @@ a{
     @-webkit-keyframes moveUpExplore {
         0%   {
             padding-top: 30%;
-            padding-left: 55%;
+            padding-left: 73%;
             opacity: 1;
         }
         100%  {
             padding-top: 0%;
-            padding-left: 55%;
+            padding-left: 73%;
             opacity: 0;
         }
       }
@@ -234,12 +234,12 @@ a{
       @keyframes moveUpExplore {
         0%   {
             padding-top: 30%;
-            padding-left: 55%;
+            padding-left: 73%;
             opacity: 1;
         }
         100%  {
             padding-top: 0%;
-            padding-left: 55%;
+            padding-left: 73%;
             opacity: 0;
         }
       }
@@ -280,7 +280,7 @@ a{
     height: 100vh;
     width: 100vh;
     padding-top: 30%;
-    padding-left: 55%;
+    padding-left: 73%;
     -webkit-animation-name: moveDownExplorer; 
     -webkit-animation-duration: 2s; 
     animation-name: moveDownExplore;

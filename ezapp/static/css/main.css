@@ -51,12 +51,12 @@ nav {
   position: absolute;
   background: #171717;
   padding: 2em;
-  width: calc(30%);
+  width: calc(25%);
   height: calc(100vh);
   display: none;
   transform: scaleX(0);
   transform-origin: right;
-  margin-left: 70%;
+  margin-left: 75%;
 }
 
 nav .close-btn {
@@ -80,15 +80,15 @@ nav ul {
 }
 
 .lg-lb img{
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
 }
 #close-menu-su{
   justify-self: end;
 }
 
 #sign-up .lg-lb p{
-  font-size: 60px;
+  font-size: 70px;
   padding-left: 10px;
 }
 
@@ -103,7 +103,7 @@ nav ul {
   color: white;
   font-weight: bold;
   font-size: 15px;
-  padding-top: 20px;
+  padding-top: 30px;
   text-decoration: none;
 }
 
@@ -145,7 +145,7 @@ nav ul span {
 
 nav ul li {
   opacity: 0;
-  padding-top: 35px;
+  padding-top: 30px;
 }
 
 .show-menu {
