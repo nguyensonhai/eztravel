@@ -9,6 +9,21 @@
 {% block title%}Ez Travel{% endblock  %}
 
 {% block content %}
+<nav id="log-in">
+    <img src="{% static 'images/main/close.svg' %}" class="close-btn" id="close-menu-lg">
+    <div class="lg-lb">
+        <img src="{% static 'images/base/logo_eztravel.png' %}" id="img-lg">
+        <p>Log in</p>
+    </div>
+    <p>Email</p>
+    <input type="email" id="email-lg" type="text" placeholder="Type your email">
+    <!-- <p>user</p>
+    <input id="user" type="text"> -->
+    <p>Password</p>
+    <input type="password" id="password-lg" type="text" placeholder="Type your password">
+    <button id="open-signup">Don't have an account?</button>
+    <input id='comfirm-lg' type="submit" value="Confirm">
+</nav>
 <nav id="sign-up">
     <img src="{% static 'images/main/close.svg' %}" class="close-btn" id="close-menu-su">
     <div class="lg-lb">
@@ -16,17 +31,17 @@
         <p>Sign up</p>
     </div>
     <p>Your name</p>
-    <input id="name" type="text" placeholder="Type your name">
+    <input id="name-su" type="text" placeholder="Type your name">
     <p>Email</p>
-    <input type="email" id="email" type="text" placeholder="Type your email">
+    <input type="email" id="email-su" type="text" placeholder="Type your email">
     <!-- <p>user</p>
     <input id="user" type="text"> -->
     <p>Password</p>
-    <input type="password" id="password" type="text" placeholder="Type your password">
+    <input type="password" id="password-su" type="text" placeholder="Type your password">
     <p>Re-type password</p>
-    <input type="password" id="re-password" type="text" placeholder="Re-type your password">
-    <a href="#login">Already has an account?</a>
-    <input id='comfirm' type="submit" value="Confirm">
+    <input type="password" id="re-password-su" type="text" placeholder="Re-type your password">
+    <button id="open-login">Already has an account?</button>
+    <input id='comfirm-su' type="submit" value="Confirm">
 </nav>
 <nav id="overlay">
     <img src="{% static 'images/main/close.svg' %}" class="close-btn" id="close-menu">
@@ -55,20 +70,35 @@
 <script>
     const overlay = document.getElementById('overlay');
     const closeMenu = document.getElementById('close-menu');
-    const singUp = document.getElementById('sign-up');
+    const signUp = document.getElementById('sign-up');
+    const logIn = document.getElementById('log-in');
     const bg = 1;
     document.getElementById('open-menu').addEventListener('click', function () {
         overlay.classList.add('show-menu');
     });
     document.getElementById('close-menu-su').addEventListener('click', function () {
-        singUp.classList.remove('show-menu');
+        signUp.classList.remove('show-menu');
+    });
+    document.getElementById('close-menu-lg').addEventListener('click', function () {
+        logIn.classList.remove('show-menu');
     });
     document.getElementById('close-menu').addEventListener('click', function () {
         overlay.classList.remove('show-menu');
     });
     document.getElementById('sign-up-btn').addEventListener('click', function () {
-        singUp.classList.add('show-menu');
+        signUp.classList.add('show-menu');
     });
+    document.getElementById('log-in-btn').addEventListener('click', function () {
+        logIn.classList.add('show-menu');
+    });
+    document.getElementById('open-login').addEventListener('click', function() {
+        signUp.classList.remove('show-menu');
+        logIn.classList.add('show-menu');
+    });
+    document.getElementById('open-signup').addEventListener('click', function() {
+        logIn.classList.remove('show-menu');
+        signUp.classList.add('show-menu');        
+    })
     var images = ["{% static 'images/main/1.jpg' %}", "{% static 'images/main/2.jpg' %}", "{% static 'images/main/3.jpg' %}", "{% static 'images/main/4.jpg' %}"];
     var random = images[Math.floor(Math.random() * images.length)];
     document.body.style.backgroundImage = 'url(' + random + ')';
