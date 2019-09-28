@@ -192,6 +192,19 @@ nav ul {
   color: white;
   padding-top: 20px;
 }
+
+#about-us {
+  z-index: 2;
+  display: grid;
+  grid-template-rows: no-repeat;
+  opacity: 0;
+  height: 100%;
+}
+
+#close-menu-au{
+  justify-self: end;
+}
+
 nav ul a, button {
   color: white;
   font-weight: bold;

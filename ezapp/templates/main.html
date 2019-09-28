@@ -43,6 +43,9 @@
     <button id="open-login">Already has an account?</button>
     <input id='comfirm-su' type="submit" value="Confirm">
 </nav>
+<nav id="about-us">
+    <img src="{% static 'images/main/close.svg' %}" class="close-btn" id="close-menu-au">
+</nav>
 <nav id="overlay">
     <img src="{% static 'images/main/close.svg' %}" class="close-btn" id="close-menu">
     <ul>
@@ -72,23 +75,23 @@
     const closeMenu = document.getElementById('close-menu');
     const signUp = document.getElementById('sign-up');
     const logIn = document.getElementById('log-in');
-    const bg = 1;
-    document.getElementById('open-menu').addEventListener('click', function () {
+    const aboutUs = document.getElementById('about-us');
+    document.getElementById('open-menu').addEventListener('click', function() {
         overlay.classList.add('show-menu');
     });
-    document.getElementById('close-menu-su').addEventListener('click', function () {
+    document.getElementById('close-menu-su').addEventListener('click', function() {
         signUp.classList.remove('show-menu');
     });
-    document.getElementById('close-menu-lg').addEventListener('click', function () {
+    document.getElementById('close-menu-lg').addEventListener('click', function() {
         logIn.classList.remove('show-menu');
     });
-    document.getElementById('close-menu').addEventListener('click', function () {
+    document.getElementById('close-menu').addEventListener('click', function() {
         overlay.classList.remove('show-menu');
     });
-    document.getElementById('sign-up-btn').addEventListener('click', function () {
+    document.getElementById('sign-up-btn').addEventListener('click', function() {
         signUp.classList.add('show-menu');
     });
-    document.getElementById('log-in-btn').addEventListener('click', function () {
+    document.getElementById('log-in-btn').addEventListener('click', function() {
         logIn.classList.add('show-menu');
     });
     document.getElementById('open-login').addEventListener('click', function() {
@@ -98,7 +101,13 @@
     document.getElementById('open-signup').addEventListener('click', function() {
         logIn.classList.remove('show-menu');
         signUp.classList.add('show-menu');        
-    })
+    });
+    document.getElementById('about-us-btn').addEventListener('click', function() {
+        aboutUs.classList.add('show-menu');
+    });
+    document.getElementById('close-menu-au').addEventListener('click', function() {
+        aboutUs.classList.remove('show-menu')
+    });
     var images = ["{% static 'images/main/1.jpg' %}", "{% static 'images/main/2.jpg' %}", "{% static 'images/main/3.jpg' %}", "{% static 'images/main/4.jpg' %}"];
     var random = images[Math.floor(Math.random() * images.length)];
     document.body.style.backgroundImage = 'url(' + random + ')';
