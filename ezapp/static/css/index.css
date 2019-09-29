@@ -213,9 +213,9 @@ a{
     padding-top: 0%;
     padding-left: 73%;
     -webkit-animation-name: moveUpExplorer; 
-    -webkit-animation-duration: 2s; 
+    -webkit-animation-duration: 2.5s; 
     animation-name: moveUpExplore;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
     }
     @-webkit-keyframes moveUpExplore {
         0%   {
@@ -249,9 +249,9 @@ a{
     width: 100vh;
     padding-top: 20%;
     -webkit-animation-name: moveUpBack; 
-    -webkit-animation-duration: 2s; 
+    -webkit-animation-duration: 2.5s; 
     animation-name: moveUpBack;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
     }
     @-webkit-keyframes moveUpBack {
         0%   {
@@ -282,9 +282,9 @@ a{
     padding-top: 30%;
     padding-left: 73%;
     -webkit-animation-name: moveDownExplorer; 
-    -webkit-animation-duration: 2s; 
+    -webkit-animation-duration: 2.5s; 
     animation-name: moveDownExplore;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
     }
     @-webkit-keyframes moveDownExplore {
         0%   {
@@ -314,9 +314,9 @@ a{
     width: 100vh;
     padding-top: 60%;
     -webkit-animation-name: moveDownBack; 
-    -webkit-animation-duration: 2s; 
+    -webkit-animation-duration: 2.5s; 
     animation-name: moveDownBack;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
     }
     @-webkit-keyframes moveDownBack {
         0%   {
@@ -401,33 +401,24 @@ img {
 
 .d1up {
     z-index: 0;
+    padding-top: 120px;
+    animation-name: moveUp2;
+    animation-duration: 2.5s;
 }
 
 .d2up {
     z-index: 1;
-    padding-top: 40px;
-    -webkit-animation-name: moveUp1; 
-    -webkit-animation-duration: 2s; 
+    padding-top: 140px; 
     animation-name: moveUp1;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
 }
 
 .d3up {
     z-index: 2;
     padding-top: 0px;
-    -webkit-animation-name: moveUp; 
-    -webkit-animation-duration: 2s; 
     animation-name: moveUp;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
 }
-@-webkit-keyframes moveUp {
-    0%   {
-        padding-top: 100px;
-    }
-    100%  {
-        padding-top: 0px;
-    }
-  }
   
   /* Standard syntax */
   @keyframes moveUp {
@@ -439,14 +430,6 @@ img {
     }
   }
 
-  @-webkit-keyframes moveUp1 {
-    0%   {
-        padding-top: 70px;
-    }
-    100%  {
-        padding-top: 40px;
-    }
-  }
   
   /* Standard syntax */
   @keyframes moveUp1 {
@@ -454,17 +437,23 @@ img {
         padding-top: 70px;
     }
     100%  {
-        padding-top: 40px;
+        padding-top: 140px;
     }
   }
 
+  @keyframes moveUp2 {
+    0%   {
+        padding-top: 0px;
+    }
+    100%  {
+        padding-top: 120px;
+    }
+  }
 
 .d4up {
-    z-index: 3;
-    -webkit-animation-name: moveUp; 
-    -webkit-animation-duration: 2s; 
+    z-index: 3; 
     animation-name: moveUp;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
     padding-top: 0px;
 }
 
@@ -486,26 +475,27 @@ img {
 
 .d1down {
     z-index: 0;
+    padding-top: 0px;
+    animation-name: moveDown2;
+    animation-duration: 2.5s;
 }
 
 .d2down {
     padding-top: 70px;
     z-index: 1;
-    -webkit-animation-name: movedown1; 
-    -webkit-animation-duration: 2s; 
-    animation-name: movedown1;
-    animation-duration: 2s;
+    animation-name: moveDown1;
+    animation-duration: 2.5s;
 }
 
 .d3down {
     padding-top: 100px;
     z-index: 2;
-    -webkit-animation-name: movedown; 
-    -webkit-animation-duration: 2s; 
-    animation-name: movedown;
-    animation-duration: 2s;
+    animation-name: moveDown;
+    animation-duration: 2.5s;
 }
-@-webkit-keyframes movedown {
+  
+  /* Standard syntax */
+  @keyframes moveDown {
     0%   {
         padding-top: 0px;
     }
@@ -515,39 +505,30 @@ img {
   }
   
   /* Standard syntax */
-  @keyframes movedown {
+  @keyframes moveDown1 {
     0%   {
-        padding-top: 0px;
-    }
-    100%  {
-        padding-top: 100px;
-    }
-  }
-  @-webkit-keyframes movedown1 {
-    0%   {
-        padding-top: 40px;
+        padding-top: 140px;
     }
     100%  {
         padding-top: 70px;
     }
   }
-  
-  /* Standard syntax */
-  @keyframes movedown1 {
-    0%   {
-        padding-top: 40px;
-    }
-    100%  {
-        padding-top: 70px;
-    }
-  }
+
+    /* Standard syntax */
+    @keyframes moveDown2 {
+        0%   {
+            padding-top: 120px;
+        }
+        100%  {
+            padding-top: 0px;
+        }
+      }
+
 .d4down {
     padding-top: 100px;
     z-index: 3;
-    -webkit-animation-name: movedown; 
-    -webkit-animation-duration: 2s; 
-    animation-name: movedown;
-    animation-duration: 2s;
+    animation-name: moveDown;
+    animation-duration: 2.5s;
 }
 
 .d5down {
