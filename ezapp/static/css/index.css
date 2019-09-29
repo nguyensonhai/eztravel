@@ -213,9 +213,9 @@ a{
     padding-top: 0%;
     padding-left: 73%;
     -webkit-animation-name: moveUpExplorer; 
-    -webkit-animation-duration: 2.5s; 
+    -webkit-animation-duration: 2s; 
     animation-name: moveUpExplore;
-    animation-duration: 2.5s;
+    animation-duration: 2s;
     }
     @-webkit-keyframes moveUpExplore {
         0%   {
@@ -249,9 +249,9 @@ a{
     width: 100vh;
     padding-top: 20%;
     -webkit-animation-name: moveUpBack; 
-    -webkit-animation-duration: 2.5s; 
+    -webkit-animation-duration: 2s; 
     animation-name: moveUpBack;
-    animation-duration: 2.5s;
+    animation-duration: 2s;
     }
     @-webkit-keyframes moveUpBack {
         0%   {
@@ -282,9 +282,9 @@ a{
     padding-top: 30%;
     padding-left: 73%;
     -webkit-animation-name: moveDownExplorer; 
-    -webkit-animation-duration: 2.5s; 
+    -webkit-animation-duration: 2s; 
     animation-name: moveDownExplore;
-    animation-duration: 2.5s;
+    animation-duration: 2s;
     }
     @-webkit-keyframes moveDownExplore {
         0%   {
@@ -314,9 +314,9 @@ a{
     width: 100vh;
     padding-top: 60%;
     -webkit-animation-name: moveDownBack; 
-    -webkit-animation-duration: 2.5s; 
+    -webkit-animation-duration: 2s; 
     animation-name: moveDownBack;
-    animation-duration: 2.5s;
+    animation-duration: 2s;
     }
     @-webkit-keyframes moveDownBack {
         0%   {
@@ -403,21 +403,21 @@ img {
     z-index: 0;
     padding-top: 120px;
     animation-name: moveUp2;
-    animation-duration: 2.5s;
+    animation-duration: 2s;
 }
 
 .d2up {
     z-index: 1;
     padding-top: 140px; 
     animation-name: moveUp1;
-    animation-duration: 2.5s;
+    animation-duration: 2s;
 }
 
 .d3up {
     z-index: 2;
     padding-top: 0px;
     animation-name: moveUp;
-    animation-duration: 2.5s;
+    animation-duration: 2s;
 }
   
   /* Standard syntax */
@@ -453,7 +453,7 @@ img {
 .d4up {
     z-index: 3; 
     animation-name: moveUp;
-    animation-duration: 2.5s;
+    animation-duration: 2s;
     padding-top: 0px;
 }
 
@@ -477,21 +477,21 @@ img {
     z-index: 0;
     padding-top: 0px;
     animation-name: moveDown2;
-    animation-duration: 2.5s;
+    animation-duration: 2s;
 }
 
 .d2down {
     padding-top: 70px;
     z-index: 1;
     animation-name: moveDown1;
-    animation-duration: 2.5s;
+    animation-duration: 2s;
 }
 
 .d3down {
     padding-top: 100px;
     z-index: 2;
     animation-name: moveDown;
-    animation-duration: 2.5s;
+    animation-duration: 2s;
 }
   
   /* Standard syntax */
@@ -528,7 +528,7 @@ img {
     padding-top: 100px;
     z-index: 3;
     animation-name: moveDown;
-    animation-duration: 2.5s;
+    animation-duration: 2s;
 }
 
 .d5down {
