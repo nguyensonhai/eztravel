@@ -43,6 +43,13 @@
         document.oncontextmenu = new Function("return false;")
         document.onselectstart = new Function("return false;")
     </script>
+    <script>
+      $(document).ready(function() {
+         function disablePrev() { window.history.forward() }
+         window.onload = disablePrev();
+         window.onpageshow = function(evt) { if (evt.persisted) disableBack() }
+      });
+    </script>
 </body>
 
 </html>

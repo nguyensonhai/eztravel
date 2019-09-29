@@ -401,9 +401,6 @@ img {
 
 .d1up {
     z-index: 0;
-    padding-top: 120px;
-    animation-name: moveUp2;
-    animation-duration: 2s;
 }
 
 .d2up {
@@ -441,15 +438,6 @@ img {
     }
   }
 
-  @keyframes moveUp2 {
-    0%   {
-        padding-top: 0px;
-    }
-    100%  {
-        padding-top: 120px;
-    }
-  }
-
 .d4up {
     z-index: 3; 
     animation-name: moveUp;
@@ -475,9 +463,6 @@ img {
 
 .d1down {
     z-index: 0;
-    padding-top: 0px;
-    animation-name: moveDown2;
-    animation-duration: 2s;
 }
 
 .d2down {
@@ -514,15 +499,6 @@ img {
     }
   }
 
-    /* Standard syntax */
-    @keyframes moveDown2 {
-        0%   {
-            padding-top: 120px;
-        }
-        100%  {
-            padding-top: 0px;
-        }
-      }
 
 .d4down {
     padding-top: 100px;
