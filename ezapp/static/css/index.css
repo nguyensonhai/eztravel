@@ -197,8 +197,8 @@ a{
 .banner .d6 .explore{
     height: 100vh;
     width: 100vh;
-    padding-top: 30%;
-    padding-left: 73%;
+    padding-top: 35%;
+    padding-left:73%;
     }
 .banner .d6 .back{
     height: 100vh;
@@ -212,28 +212,15 @@ a{
     width: 100vh;
     padding-top: 0%;
     padding-left: 73%;
-    -webkit-animation-name: moveUpExplorer; 
-    -webkit-animation-duration: 2s; 
     animation-name: moveUpExplore;
     animation-duration: 2s;
-    }
-    @-webkit-keyframes moveUpExplore {
-        0%   {
-            padding-top: 30%;
-            padding-left: 73%;
-            opacity: 1;
-        }
-        100%  {
-            padding-top: 0%;
-            padding-left: 73%;
-            opacity: 0;
-        }
-      }
+    opacity: 0;
+}
       
       /* Standard syntax */
       @keyframes moveUpExplore {
         0%   {
-            padding-top: 30%;
+            padding-top: 35%;
             padding-left: 73%;
             opacity: 1;
         }
@@ -279,23 +266,11 @@ a{
 .banner .d6down .explore{
     height: 100vh;
     width: 100vh;
-    padding-top: 30%;
+    padding-top: 35%;
     padding-left: 73%;
-    -webkit-animation-name: moveDownExplorer; 
-    -webkit-animation-duration: 2s; 
     animation-name: moveDownExplore;
     animation-duration: 2s;
     }
-    @-webkit-keyframes moveDownExplore {
-        0%   {
-            padding-top: 00%;
-            opacity: 0;
-        }
-        100%  {
-            padding-top: 30%;
-            opacity: 1;
-        }
-      }
       
       /* Standard syntax */
       @keyframes moveDownExplore {
@@ -304,7 +279,7 @@ a{
             opacity: 0;
         }
         100%  {
-            padding-top: 30%;
+            padding-top: 35%;
             opacity: 1;
         }
       }
@@ -405,7 +380,7 @@ img {
 
 .d2up {
     z-index: 1;
-    padding-top: 140px; 
+    padding-top: 100px; 
     animation-name: moveUp1;
     animation-duration: 2s;
 }
@@ -434,7 +409,7 @@ img {
         padding-top: 70px;
     }
     100%  {
-        padding-top: 140px;
+        padding-top: 100px;
     }
   }
 
@@ -492,7 +467,7 @@ img {
   /* Standard syntax */
   @keyframes moveDown1 {
     0%   {
-        padding-top: 140px;
+        padding-top: 100px;
     }
     100%  {
         padding-top: 70px;
