@@ -239,6 +239,7 @@ a{
     -webkit-animation-duration: 2s; 
     animation-name: moveUpBack;
     animation-duration: 2s;
+    opacity: 1;
     }
     @-webkit-keyframes moveUpBack {
         0%   {
@@ -292,6 +293,7 @@ a{
     -webkit-animation-duration: 2s; 
     animation-name: moveDownBack;
     animation-duration: 2s;
+    opacity: 0;
     }
     @-webkit-keyframes moveDownBack {
         0%   {
