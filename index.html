@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -11,7 +10,6 @@
     <link rel="shortcut icon" href="icon/logo_eztravel.ico">
     <title>Ez Travel</title>
 </head>
-
 <body>
     <div id="animationload" class="animationload">
         <div id="loader_wrap" class="loader__wrap" role="alertdialog" aria-busy="true" aria-live="polite"
@@ -22,10 +20,7 @@
             </div>
         </div>
     </div>
-
-    <div id="app">
-
-    </div>
+    <div id="app"></div>
     <script>
         var images = ["images/main/1.jpg", "images/main/2.jpg", "images/main/3.jpg", "images/main/4.jpg"];
         var random = images[Math.floor(Math.random() * images.length)];
@@ -44,7 +39,7 @@
             speedAsDuration: true
         });
     </script>
-<!--     <script type="text/javascript">
+    <script type="text/javascript">
         document.oncontextmenu = new Function("return false;")
         document.onselectstart = new Function("return false;")
     </script>
@@ -54,9 +49,7 @@
             window.onload = disablePrev();
             window.onpageshow = function (evt) { if (evt.persisted) disableBack() }
         });
-    </script> -->
-    
-
+    </script>
 </body>
 
 </html>
