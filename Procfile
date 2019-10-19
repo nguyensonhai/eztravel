@@ -1,1 +1,0 @@
-web: gunicorn eztravel.wsgi --log-file -
