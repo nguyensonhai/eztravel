@@ -15,6 +15,7 @@ components.mainPage = `<nav id="log-in">
 <button id="open-signup">Don't have an account?</button>
 <input id='comfirm-lg' type="submit" value="Confirm">
 </nav>
+<form id="sign-up-form">
 <nav id="sign-up">
 <img src="images/main/close.svg" class="close-btn" id="close-menu-su">
 <div class="lg-lb">
@@ -23,20 +24,27 @@ components.mainPage = `<nav id="log-in">
 </div>
 <p>Full Name</p>
 <input type="text" id="fullname-su" type="text" placeholder="Type your name">
+<div class="error-message" id="fullname-error-message"></div>
 <p>Email</p>
 <input type="email" id="email-su" type="text" placeholder="Type your email">
+<div class="error-message" id="email-error-message"></div>
 <p>Username</p>
-<input type='text' id="user" type="text" placeholder="Type your username">
+<input type='text' id="user-su" type="text" placeholder="Type your username">
+<div class="error-message" id="user-error-message"></div>
 <p>Password</p>
 <input type="password" id="password-su" type="text" placeholder="Type your password">
+<div class="error-message" id="password-error-message"></div>
 <p>Re-Password</p>
 <input type="password" id="repassword-su" type="text" placeholder="Re-Type your password">
+<div class="error-message" id="repassword-error-message"></div>
 <button id="open-login">Already has an account?</button>
 <input id='comfirm-su' type="submit" value="Confirm">
 </nav>
+</form>
 <nav id="about-us">
 <img src="images/main/close.svg" class="close-btn" id="close-menu-au">
 </nav>
+
 <nav id="overlay">
 <img src="images/main/close.svg" class="close-btn" id="close-menu">
 <ul>

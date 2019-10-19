@@ -1,4 +1,4 @@
 window.onload = () => {
     document.getElementById("animationload").hidden = true;
-    views.setActiveScreen("mainPage");
+    view.setActiveScreen("mainPage");
 };
