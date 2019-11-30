@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/loader.css">
+    <link rel="shortcut icon" href="../icon/logo_eztravel.ico">
+    <title>Ez Travel</title>
+</head>
+
+<body onload="pageLoaded()">
+    <div id="animationload" class="animationload">
+        <div id="loader_wrap" class="loader__wrap" role="alertdialog" aria-busy="true" aria-live="polite"
+            aria-label="Loading…">
+            <div class="loader" aria-hidden="true">
+                <div class="loader__sq"></div>
+                <div class="loader__sq"></div>
+            </div>
+        </div>
+    </div>
+<div class="banner">
+    <div id="d1" class="d1">
+        <img src="../images/index/d1.png" alt="d1">
+    </div>
+    <div id="d2" class="d2">
+        <img src="../images/index/d2.png" alt="d2">
+    </div>
+    <div id="d3" class="d3">
+        <img src="../images/index/d3.png" alt="d3">
+    </div>
+    <div id="d4" class="d4">
+        <img src="../images/index/d4.png" alt="d4">
+    </div>
+    <div id="d5" class="d5">
+        <img src="../images/index/d5.png" alt="d4">
+    </div>
+    <div id="d6" class="d6">
+        <div class=explore id="explore">
+            <a data-scroll href="#content" class="js-anchor-link" onclick="parallaxUp()">EXPLORE</a>
+        </div>
+        <div class="content" id="content">
+            <div class="galery">
+                <div class="single text-center">
+                    <a href="/main">
+                        <div class="to-main">
+                            <p>SINGLE TRIP</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="couple text-center">
+                    <a href="/main">
+                        <div class="to-main">
+                            <p>COUPLE TRIP</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="family text-center">
+                    <a href="/main">
+                        <div class="to-main">
+                            <p>FAMILY TRIP</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="team text-center">
+                    <a href="/main">
+                        <div class="to-main">
+                            <p>TEAM TRIP</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <a data-scroll href="#explore" class="content-up" onclick="parallaxDown()"><img class="js-anchor-link"
+                    src="../images/index/up.png"></a>
+        </div>
+    </div>
+
+    <script>
+        function parallaxUp() {
+            document.getElementById('d1').className = "d1up";
+            document.getElementById('d2').className = "d2up";
+            document.getElementById('d3').className = "d3up";
+            document.getElementById('d4').className = "d4up";
+            document.getElementById('d5').className = "d5up";
+            document.getElementById('d6').className = "d6up";
+        }
+        function parallaxDown() {
+            document.getElementById('d1').className = "d1down";
+            document.getElementById('d2').className = "d2down";
+            document.getElementById('d3').className = "d3down";
+            document.getElementById('d4').className = "d4down";
+            document.getElementById('d5').className = "d5down";
+            document.getElementById('d6').className = "d6down";
+        }
+    </script>
+
+<script src="../js/smooth-scroll.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 2000,
+            speedAsDuration: true
+        });
+    </script>
+    <script>
+        function pageLoaded() {
+            document.getElementById("animationload").hidden = true;
+        }
+    </script>
+    <script type="text/javascript">
+        document.oncontextmenu = new Function("return false;")
+        document.onselectstart = new Function("return false;")
+    </script>
+    <script>
+      $(document).ready(function() {
+         function disablePrev() { window.history.forward() }
+         window.onload = disablePrev();
+         window.onpageshow = function(evt) { if (evt.persisted) disableBack() }
+      });
+    </script>
+</body>
+
+</html>

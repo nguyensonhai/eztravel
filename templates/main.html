@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/loader.css">
+    <link rel="shortcut icon" href="../icon/logo_eztravel.ico">
+    <title>Ez Travel</title>
+</head>
+<body>
+<nav id="log-in">
+    <img src="../images/main/close.svg" class="close-btn" id="close-menu-lg">
+    <div class="lg-lb">
+        <img src="../images/base/logo_eztravel.png" id="img-lg">
+        <p>Log in</p>
+    </div>
+    <p>Email</p>
+    <input type="email" id="email-lg" type="text" placeholder="Type your email">
+    <!-- <p>user</p>
+    <input id="user" type="text"> -->
+    <p>Password</p>
+    <input type="password" id="password-lg" type="text" placeholder="Type your password">
+    <button id="open-signup">Don't have an account?</button>
+    <input id='comfirm-lg' type="submit" value="Confirm">
+</nav>
+<form action="/signup/" method="POST">
+    <nav id="sign-up">
+        <img src="../images/main/close.svg" class="close-btn" id="close-menu-su">
+        <div class="lg-lb">
+            <img src="../images/base/logo_eztravel.png" id="img-su">
+            <p>Sign up</p>
+        </div>
+        <button id="open-login">Already has an account?</button>
+        <input id='comfirm-su' type="submit" value="Confirm">
+    </nav>
+</form>
+<nav id="about-us">
+    <img src="../images/main/close.svg" class="close-btn" id="close-menu-au">
+</nav>
+<nav id="overlay">
+    <img src="../images/main/close.svg" class="close-btn" id="close-menu">
+    <ul>
+        <li>
+            <a href="/">Home</a>
+        </li>
+        <li>
+            <button id="log-in-btn">Log in</button>
+        </li>
+        <li>
+            <button id="sign-up-btn">Sign up</button>
+        </li>
+        <li>
+            <button id="about-us-btn">About us</button>
+        </li>
+    </ul>
+</nav>
+<header>
+    <a href="#" class="logo">Ez Travel</a>
+    <img src="../images/main/menu.svg" class="menu-btn" id="open-menu">
+</header>
+<section>
+    <h1>Welcome to Ez Travel</h1>
+</section>
+<script>
+    const overlay = document.getElementById('overlay');
+    const closeMenu = document.getElementById('close-menu');
+    const signUp = document.getElementById('sign-up');
+    const logIn = document.getElementById('log-in');
+    const aboutUs = document.getElementById('about-us');
+    document.getElementById('open-menu').addEventListener('click', function () {
+        overlay.classList.add('show-menu');
+    });
+    document.getElementById('close-menu-su').addEventListener('click', function () {
+        signUp.classList.remove('show-menu');
+    });
+    document.getElementById('close-menu-lg').addEventListener('click', function () {
+        logIn.classList.remove('show-menu');
+    });
+    document.getElementById('close-menu').addEventListener('click', function () {
+        overlay.classList.remove('show-menu');
+    });
+    document.getElementById('sign-up-btn').addEventListener('click', function () {
+        signUp.classList.add('show-menu');
+    });
+    document.getElementById('log-in-btn').addEventListener('click', function () {
+        logIn.classList.add('show-menu');
+    });
+    document.getElementById('open-login').addEventListener('click', function () {
+        signUp.classList.remove('show-menu');
+        logIn.classList.add('show-menu');
+    });
+    document.getElementById('open-signup').addEventListener('click', function () {
+        logIn.classList.remove('show-menu');
+        signUp.classList.add('show-menu');
+    });
+    document.getElementById('about-us-btn').addEventListener('click', function () {
+        aboutUs.classList.add('show-menu');
+    });
+    document.getElementById('close-menu-au').addEventListener('click', function () {
+        aboutUs.classList.remove('show-menu')
+    });
+    var images = ["../images/main/1.jpg", "../images/main/2.jpg", "../images/main/3.jpg", "../images/main/4.jpg"];
+    var random = images[Math.floor(Math.random() * images.length)];
+    document.body.style.backgroundImage = 'url(' + random + ')';
+</script>
+    <script>
+            var alert = '{{ alert }}';
+            if (alert != '') {
+                alert(alert);
+            }    
+        </script>
+    <script src="{% static 'js/smooth-scroll.js' %}"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 2000,
+            speedAsDuration: true
+        });
+    </script>
+    <script>
+        function pageLoaded() {
+            document.getElementById("animationload").hidden = true;
+        }
+    </script>
+    <script type="text/javascript">
+        document.oncontextmenu = new Function("return false;")
+        document.onselectstart = new Function("return false;")
+    </script>
+    <script>
+      $(document).ready(function() {
+         function disablePrev() { window.history.forward() }
+         window.onload = disablePrev();
+         window.onpageshow = function(evt) { if (evt.persisted) disableBack() }
+      });
+    </script>
+</body>
+
+</html>
